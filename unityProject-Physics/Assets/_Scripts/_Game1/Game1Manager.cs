@@ -1,7 +1,6 @@
-using System.Collections.Generic;
 using UnityEngine;
 
-public class manager : MonoBehaviour {
+public class Game1Manager : MonoBehaviour {
     [SerializeField] private GameObject pointer;
     [SerializeField] int count;
     GameObject[] players;
