@@ -40,10 +40,10 @@ public class Game4Manager : MonoBehaviour {
             force4++;
         }
 
-        if (force1 > 1) force1 -= 0.05f;
-        if (force2 > 1) force2 -= 0.05f;
-        if (force3 > 1) force3 -= 0.05f;
-        if (force4 > 1) force4 -= 0.05f;
+        if (force1 > 1) force1 -= Time.fixedDeltaTime / 2;
+        if (force2 > 1) force2 -= Time.fixedDeltaTime / 2;
+        if (force3 > 1) force3 -= Time.fixedDeltaTime / 2;
+        if (force4 > 1) force4 -= Time.fixedDeltaTime / 2;
 
         player1.localScale = Vector3.one * (1 + force1 / 4);
         player2.localScale = Vector3.one * (1 + force2 / 4);

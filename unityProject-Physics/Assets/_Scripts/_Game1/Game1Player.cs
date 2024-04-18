@@ -5,9 +5,9 @@ public class Game1Player : MonoBehaviour {
     [SerializeField] private KeyCode key;
     [SerializeField] private Color color;
     [SerializeField] private float force;
-    [SerializeField] private float friction = 0.98f;
+    [SerializeField] private float friction = 0.985f;
     [SerializeField] private float stop = 0.01f;
-    [SerializeField] private float maxForce = 75.0f;
+    [SerializeField] private float maxForce = 200.0f;
     private Vector3 start;
     private Vector3 end;
     private Vector3 direction;
